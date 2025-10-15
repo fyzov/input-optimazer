@@ -1,52 +1,52 @@
 # Input Optimizer 🚀
 
-**Windows утилита для уменьшения задержки ввода путём оптимизации настроек мыши, клавиатуры и системы.**
+**Windows utility for reducing input lag by optimizing mouse, keyboard, and system settings.**
 
-## Возможности
+## Features
 
-* 🖱️ **Оптимизация мыши** - Отключает ускорение, улучшает опрос
-* ⌨️ **Оптимизация клавиатуры** - Минимизирует задержки ввода
-* ⚡ **Управление питанием** - Отключает выборочную приостановку USB
-* 🎯 **Настройка системы** - Высокопроизводительная схема питания, отключенние фоновых служб
+* 🖱️ **Mouse Optimization** - Disables acceleration, improves polling
+* ⌨️ **Keyboard Optimization** - Minimizes input lag
+* ⚡ **Power Management** - Disables USB selective suspend
+* 🎯 **System Tuneup** - High-performance power plan, disable background services
 
-## Восстановление
+## Restore
 
 `python restore.py`
-**Восстанавливает стандартные настройки Windows.**
+**Restores default Windows settings.**
 
-## Требования
+## Requirements
 
 * Windows 10/11
 * Python 3.6
-* Права администратора
+* Administrator rights
 
-## Модификации реестра
+## Registry Modifications
 
-* **Мышь:** Отключает ускорение (MouseSpeed=0, MouseThreshold=0)
-* **Клавиатура:** Отключает функции специальных возможностей (FilterKeys, StickyKeys)
-* **Питание:** Отключает выборочную приостановку USB/HID
-* **Драйверы:** Увеличивает лимиты портов мыши
+* **Mouse:** Disables acceleration (MouseSpeed=0, MouseThreshold=0)
+* **Keyboard:** Disables special functions (FilterKeys, StickyKeys)
+* **Power:** Disables USB/HID selective suspend
+* **Drivers:** Increases mouse port limits
 
-## Системные изменения
+## System Changes
 
-* **Схема питания:** Устанавливает высокопроизводительную схему
-* **Службы:** Отключает ввод с планшета, сенсорную клавиатуру, поиск Windows
-* **USB:** Отключает выборочную приостановку через powercfg
+* **Power Scheme:** Sets the high-performance scheme
+* **Services:** Disables tablet input, touch keyboard, and Windows search
+* **USB:** Disables selective suspend via powercfg
 
-## Файлы
+## Files
 
-* `main.py` - Основной скрипт оптимизации
-* `restore.py` - Скрипт восстановления настроек
-* `registry_config.py` - Конфигурация всех настроек реестра
+* `main.py` - Main optimization script
+* `restore.py` - Settings restore script
+* `registry_config.py` - Configure all registry settings
 
-## Безопасность
-* Требуются права администратора (автоматический запрос UAC)
-* Системные файлы не изменяются
-* Все изменения обратимы через restore.py
-* Использует стандартные Windows API
+## Security
+* Requires administrator privileges (automatic UAC prompt)
+* System files are not modified
+* All changes are reversible via restore.py
+* Uses standard Windows APIs
 
-## Примечания
+## Notes
 
-* Для полного эффекта требуется перезагрузка
-* ПО игровых мышей может переопределить некоторые настройки
-* Некоторые антивирусы могут помечать изменения реестра
+* A reboot is required for full effect
+* Gaming mouse software may override Some settings
+* Some antivirus programs may flag registry changes
