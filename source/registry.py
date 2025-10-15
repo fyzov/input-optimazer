@@ -1,5 +1,3 @@
-# Input Latency Optimization Registry Settings
-
 MOUSE = [
     ("Control Panel\\Mouse", "MouseSpeed", "0"),
     ("Control Panel\\Mouse", "MouseThreshold1", "0"),
